@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This sitemap was dynamically generated on March 22, 2024 at 3:47 pm by All in One SEO v4.5.8 - the original SEO plugin for WordPress. -->
+
+<?xml-stylesheet type="text/xsl" href="/default-sitemap.xsl?sitemap=certy_clients"?>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+	<url>
+		<loc><![CDATA[/certy_clients/client-6/]]></loc>
+		<lastmod><![CDATA[2017-05-05T14:37:25+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2017/05/logo-evernote.png]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/certy_clients/client-5/]]></loc>
+		<lastmod><![CDATA[2017-05-05T14:34:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2017/05/logo-teaspoon.png]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/certy_clients/client-4/]]></loc>
+		<lastmod><![CDATA[2017-05-05T14:34:08+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2017/05/logo-compass.png]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/certy_clients/client-3/]]></loc>
+		<lastmod><![CDATA[2017-05-05T14:33:42+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2017/05/logo-jquery.png]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/certy_clients/client-2/]]></loc>
+		<lastmod><![CDATA[2017-05-05T14:33:07+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2017/05/logo-bootstrap.png]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/certy_clients/client-1/]]></loc>
+		<lastmod><![CDATA[2017-05-05T14:32:41+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2017/05/logo-wordpress.png]]></image:loc>
+		</image:image>
+	</url>
+</urlset>

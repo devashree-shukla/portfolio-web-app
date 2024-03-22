@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Blueprints of iOS Mastery: Engineering Superior App Architecture	</title>
+	<atom:link href="/architecting-ios-excellence-mastering-app-architecture-for-superior-apps/feed/" rel="self" type="application/rss+xml" />
+	<link>/architecting-ios-excellence-mastering-app-architecture-for-superior-apps/?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=architecting-ios-excellence-mastering-app-architecture-for-superior-apps</link>
+	<description>My professional portfolio</description>
+	<lastBuildDate>Tue, 19 Mar 2024 06:17:22 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.3</generator>
+</channel>
+</rss>

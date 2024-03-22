@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This sitemap was dynamically generated on March 22, 2024 at 3:47 pm by All in One SEO v4.5.8 - the original SEO plugin for WordPress. -->
+
+<?xml-stylesheet type="text/xsl" href="/default-sitemap.xsl?sitemap=root"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc><![CDATA[/post-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2024-03-22T14:55:35+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[/page-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2024-03-22T14:42:57+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[/certy_portfolio-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2017-06-20T08:46:58+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[/certy_timeline-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2024-03-15T17:21:03+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[/certy_references-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2024-03-22T13:55:38+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[/certy_clients-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2017-05-05T14:37:25+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[/post-archive-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2024-03-15T17:21:03+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[/category-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2024-03-22T14:55:35+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[/certy_portfolio_category-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2017-06-20T08:46:58+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[/certy_timeline_category-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2024-03-15T17:21:03+00:00]]></lastmod>
+	</sitemap>
+</sitemapindex>

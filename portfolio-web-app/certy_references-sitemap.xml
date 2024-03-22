@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This sitemap was dynamically generated on March 22, 2024 at 3:47 pm by All in One SEO v4.5.8 - the original SEO plugin for WordPress. -->
+
+<?xml-stylesheet type="text/xsl" href="/default-sitemap.xsl?sitemap=certy_references"?>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+	<url>
+		<loc><![CDATA[/certy_references/maptics-a-combined-approach-of-association-rule-clustering-for-large-dataset-in-web-mining/]]></loc>
+		<lastmod><![CDATA[2024-03-22T13:55:38+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2024/03/Screenshot-2024-03-22-at-7.10.09 PM.png]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/certy_references/edwin-ballard/]]></loc>
+		<lastmod><![CDATA[2024-03-15T10:59:01+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2017/05/1683558471983.jpeg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/certy_references/anil-dewani/]]></loc>
+		<lastmod><![CDATA[2024-03-15T10:58:39+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2024/03/undefined-Imgur.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/certy_references/maleeha-maria-naipaul/]]></loc>
+		<lastmod><![CDATA[2024-03-15T10:57:54+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2024/03/undefined-Imgur-2.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/certy_references/akta-kalariya/]]></loc>
+		<lastmod><![CDATA[2024-03-15T10:57:14+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2024/03/undefined-Imgur-1.jpg]]></image:loc>
+		</image:image>
+	</url>
+</urlset>
