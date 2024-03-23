@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ARKit - Devashree Shukla</title>
+	<atom:link href="/tag/arkit/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>My professional portfolio</description>
+	<lastBuildDate>Sat, 23 Mar 2024 11:48:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.3</generator>
+	<item>
+		<title>Integrating Machine Learning into iOS Apps: A starter roadmap</title>
+		<link>/380-2/?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=380-2</link>
+					<comments>/380-2/#respond</comments>
+		
+		<dc:creator><![CDATA[devashreeks]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2024 06:45:34 +0000</pubDate>
+				<category><![CDATA[Technical Writings]]></category>
+		<category><![CDATA[ARKit]]></category>
+		<category><![CDATA[CoreML]]></category>
+		<category><![CDATA[CreateML]]></category>
+		<category><![CDATA[Image detection]]></category>
+		<category><![CDATA[Machine Learning]]></category>
+		<category><![CDATA[RealityKit]]></category>
+		<category><![CDATA[Swift]]></category>
+		<guid isPermaLink="false">/?p=380</guid>
+
+					<description><![CDATA[<p>Core ML ARKit RealityKit Vision Framework Important Core ML APIs and Concepts Project Idea: Image Classifier App A simple yet intriguing project could be an Image Classifier iOS app. This app would use the camera to capture images in real time and classify them using a pre-trained Core ML model. For demonstration purposes, let&#8217;s use...</p>
+<p>The post <a href="/380-2/">Integrating Machine Learning into iOS Apps: A starter roadmap</a> first appeared on <a href="/">Devashree Shukla</a>.</p>]]></description>
+										<content:encoded><![CDATA[<h4 class="wp-block-heading">Core ML</h4>
+
+
+
+<ul>
+<li><strong>Overview</strong>: Core ML is Apple&#8217;s framework for integrating machine learning models into apps. It&#8217;s optimized for on-device performance, which minimizes memory footprint and power consumption.</li>
+
+
+
+<li><strong>Key Concepts</strong>: Model integration, Prediction, Real-time processing, Model conversion (using Core ML Tools).</li>
+
+
+
+<li><strong>Use Cases</strong>: Image classification, Sentiment analysis, Text prediction, Speech recognition.</li>
+
+
+
+<li>For further reading: <a href="https://developer.apple.com/documentation/coreml" target="_blank" rel="noopener" title="">https://developer.apple.com/documentation/coreml</a></li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">ARKit</h4>
+
+
+
+<ul>
+<li><strong>Overview</strong>: ARKit is Apple&#8217;s framework for developing augmented reality experiences. It combines device motion tracking, camera scene capture, advanced scene processing, and display conveniences to simplify the task of building an AR experience.</li>
+
+
+
+<li><strong>Key Concepts</strong>: World Tracking, Face Tracking, Image &amp; Object Detection, Environmental understanding, Human occlusion.</li>
+
+
+
+<li><strong>Use Cases</strong>: Virtual object placement, Interactive gaming, Retail and design, and Educational tools.</li>
+
+
+
+<li>For further reading: <a href="https://developer.apple.com/documentation/arkit" target="_blank" rel="noopener" title="">https://developer.apple.com/documentation/arkit</a></li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">RealityKit</h4>
+
+
+
+<ul>
+<li><strong>Overview</strong>: RealityKit is a new framework by Apple designed to work with ARKit. It focuses on rendering realistic 3D and AR content with photorealistic rendering, animation, physics, and spatial audio.</li>
+
+
+
+<li><strong>Key Concepts</strong>: Anchoring system, Entity-component system, Ray-casting, Collaborative sessions.</li>
+
+
+
+<li><strong>Use Cases</strong>: Complex AR applications, Realistic simulations, Collaborative AR experiences.</li>
+
+
+
+<li>For further reading: <a href="https://developer.apple.com/documentation/RealityKit" target="_blank" rel="noopener" title="">https://developer.apple.com/documentation/RealityKit</a></li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">Vision Framework</h4>
+
+
+
+<ul>
+<li><strong>Overview</strong>: The Vision Framework uses computer vision to perform face tracking, face detection, landmarks detection, text detection, and barcode recognition.</li>
+
+
+
+<li><strong>Key Concepts</strong>: Image analysis, Object tracking, Text recognition, Barcode detection.</li>
+
+
+
+<li><strong>Use Cases</strong>: Photo tagging, Interactive text features, Retail apps, Security applications.</li>
+
+
+
+<li>For further reading: <a href="https://developer.apple.com/documentation/vision" target="_blank" rel="noopener" title="">https://developer.apple.com/documentation/vision</a></li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Important Core ML APIs and Concepts</h3>
+
+
+
+<ul>
+<li><strong>MLModel</strong>: The core class that represents a machine learning model in Core ML. You load a model into your app by referencing its generated class, which conforms to the <code>MLModel</code> protocol.</li>
+
+
+
+<li><strong>MLModelProvider</strong>: A protocol that defines methods for loading and updating models dynamically, useful for apps that need to update their models without being recompiled.</li>
+
+
+
+<li><strong>MLFeatureValue</strong>: Represents the data input and output of a model. Core ML supports several data types, including numbers, strings, images (as <code>CVPixelBuffer</code>), multiarrays, dictionaries, and sequences.</li>
+
+
+
+<li><strong>MLDictionaryFeatureProvider</strong>: A convenient way to provide input to a model using a dictionary where keys are the input feature names of the model.</li>
+
+
+
+<li><strong>MLPredictionOptions</strong>: Options to configure model predictions, such as specifying the preferred Metal device for running the model.</li>
+
+
+
+<li><strong>Vision Framework Integration</strong>: For tasks that involve image processing before feeding into a Core ML model, the Vision framework can be used to prepare images. This is often necessary for tasks like object detection, image classification, and more.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Project Idea: Image Classifier App</h3>
+
+
+
+<p>A simple yet intriguing project could be an Image Classifier iOS app. This app would use the camera to capture images in real time and classify them using a pre-trained Core ML model. For demonstration purposes, let&#8217;s use MobileNet, a lightweight model suitable for mobile applications, to classify objects into predefined categories.</p>
+
+
+
+<h4 class="wp-block-heading">Step 1: Add MobileNet to Your Project</h4>
+
+
+
+<p>First, you need to add a Core ML model to your project. You can download the MobileNet model from Apple&#8217;s Core ML models page or use any other model that suits your interest.</p>
+
+
+
+<h4 class="wp-block-heading">Step 2: Core ML Model Integration</h4>
+
+
+
+<p>Once the model is added to your project, Xcode automatically generates a class for the model. You can then use this class to make predictions.</p>
+
+
+
+<p>Organize your code into folders like <code>Models</code>, <code>ViewControllers</code>, <code>Views</code>, and <code>Helpers</code> for better readability.</p>
+
+
+
+<p></p>
+
+
+
+<pre>
+import UIKit
+import Vision
+import CoreML
+
+class ImageClassifier {
+    private var model: VNCoreMLModel?
+    
+    init() {
+        do {
+            let configuration = MLModelConfiguration()
+            model = try VNCoreMLModel(for: MobileNet(configuration: configuration).model)
+        } catch {
+            print("Error setting up Core ML model: \(error)")
+        }
+    }
+    
+    func classify(image: UIImage, completion: @escaping (String) -> Void) {
+        guard let model = model, let ciImage = CIImage(image: image) else {
+            completion("Model or image not available")
+            return
+        }
+        
+        let request = VNCoreMLRequest(model: model) { request, error in
+            guard let results = request.results as? [VNClassificationObservation],
+                  let topResult = results.first else {
+                completion("Failed to classify image.")
+                return
+            }
+            
+            completion("Classification: \(topResult.identifier), Confidence: \(topResult.confidence)")
+        }
+        
+        let handler = VNImageRequestHandler(ciImage: ciImage)
+        do {
+            try handler.perform([request])
+        } catch {
+            print("Failed to perform classification.\n\(error.localizedDescription)")
+        }
+    }
+}
+</pre>
+
+
+
+<h3 class="wp-block-heading">References </h3>
+
+
+
+<ul>
+<li>CoreML models: <a href="https://developer.apple.com/machine-learning/models/#image" target="_blank" rel="noopener" title="">https://developer.apple.com/machine-learning/models/#image</a></li>
+
+
+
+<li>CoreML models: <a href="https://github.com/likedan/Awesome-CoreML-Models" target="_blank" rel="noopener" title="">https://github.com/likedan/Awesome-CoreML-Models</a></li>
+
+
+
+<li>Demo: <a href="https://github.com/tucan9389/awesome-ml-demos-with-ios" target="_blank" rel="noopener" title="">https://github.com/tucan9389/awesome-ml-demos-with-ios</a></li>
+
+
+
+<li>CreateML: <a href="https://developer.apple.com/machine-learning/create-ml/" target="_blank" rel="noopener" title="">https://developer.apple.com/machine-learning/create-ml/</a></li>
+</ul><p>The post <a href="/380-2/">Integrating Machine Learning into iOS Apps: A starter roadmap</a> first appeared on <a href="/">Devashree Shukla</a>.</p>]]></content:encoded>
+					
+					<wfw:commentRss>/380-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

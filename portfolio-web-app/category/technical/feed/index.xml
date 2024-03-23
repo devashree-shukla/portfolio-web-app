@@ -12,7 +12,7 @@
 	<atom:link href="/category/technical/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>My professional portfolio</description>
-	<lastBuildDate>Sat, 23 Mar 2024 11:17:05 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 23 Mar 2024 12:13:20 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -74,17 +74,15 @@
 
 
 <pre>
-#include <iostream>
-
-template<typename... Args>
+template< typename... Args >
 void print(Args... args) {
     (std::cout << ... << args) << '\n';
 }
-
-int main() {
-    print(1, 2, 3, "four", 5.0);
-}
 </pre>
+
+
+
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained"><div class="wp-block-group__inner-container"></div></div>
 
 
 
@@ -186,6 +184,13 @@ printItems(["apple", "banana", "cherry"])
 		<dc:creator><![CDATA[devashreeks]]></dc:creator>
 		<pubDate>Sat, 23 Mar 2024 06:45:34 +0000</pubDate>
 				<category><![CDATA[Technical Writings]]></category>
+		<category><![CDATA[ARKit]]></category>
+		<category><![CDATA[CoreML]]></category>
+		<category><![CDATA[CreateML]]></category>
+		<category><![CDATA[Image detection]]></category>
+		<category><![CDATA[Machine Learning]]></category>
+		<category><![CDATA[RealityKit]]></category>
+		<category><![CDATA[Swift]]></category>
 		<guid isPermaLink="false">/?p=380</guid>
 
 					<description><![CDATA[<p>Core ML ARKit RealityKit Vision Framework Important Core ML APIs and Concepts Project Idea: Image Classifier App A simple yet intriguing project could be an Image Classifier iOS app. This app would use the camera to capture images in real time and classify them using a pre-trained Core ML model. For demonstration purposes, let&#8217;s use...</p>
@@ -207,7 +212,7 @@ printItems(["apple", "banana", "cherry"])
 
 
 
-<li>For further reading: <a href="https://developer.apple.com/documentation/coreml">https://developer.apple.com/documentation/coreml</a></li>
+<li>For further reading: <a href="https://developer.apple.com/documentation/coreml" target="_blank" rel="noopener" title="">https://developer.apple.com/documentation/coreml</a></li>
 </ul>
 
 
@@ -229,7 +234,7 @@ printItems(["apple", "banana", "cherry"])
 
 
 
-<li>For further reading: <a href="https://developer.apple.com/documentation/arkit">https://developer.apple.com/documentation/arkit</a></li>
+<li>For further reading: <a href="https://developer.apple.com/documentation/arkit" target="_blank" rel="noopener" title="">https://developer.apple.com/documentation/arkit</a></li>
 </ul>
 
 
@@ -251,7 +256,7 @@ printItems(["apple", "banana", "cherry"])
 
 
 
-<li>For further reading: <a href="https://developer.apple.com/documentation/RealityKit">https://developer.apple.com/documentation/RealityKit</a></li>
+<li>For further reading: <a href="https://developer.apple.com/documentation/RealityKit" target="_blank" rel="noopener" title="">https://developer.apple.com/documentation/RealityKit</a></li>
 </ul>
 
 
@@ -273,7 +278,7 @@ printItems(["apple", "banana", "cherry"])
 
 
 
-<li>For further reading: <a href="https://developer.apple.com/documentation/vision">https://developer.apple.com/documentation/vision</a></li>
+<li>For further reading: <a href="https://developer.apple.com/documentation/vision" target="_blank" rel="noopener" title="">https://developer.apple.com/documentation/vision</a></li>
 </ul>
 
 
@@ -390,19 +395,19 @@ class ImageClassifier {
 
 
 <ul>
-<li>CoreML models: https://developer.apple.com/machine-learning/models/#image</li>
+<li>CoreML models: <a href="https://developer.apple.com/machine-learning/models/#image" target="_blank" rel="noopener" title="">https://developer.apple.com/machine-learning/models/#image</a></li>
 
 
 
-<li>CoreML models: https://github.com/likedan/Awesome-CoreML-Models</li>
+<li>CoreML models: <a href="https://github.com/likedan/Awesome-CoreML-Models" target="_blank" rel="noopener" title="">https://github.com/likedan/Awesome-CoreML-Models</a></li>
 
 
 
-<li>Demo: https://github.com/tucan9389/awesome-ml-demos-with-ios</li>
+<li>Demo: <a href="https://github.com/tucan9389/awesome-ml-demos-with-ios" target="_blank" rel="noopener" title="">https://github.com/tucan9389/awesome-ml-demos-with-ios</a></li>
 
 
 
-<li>CreateML: https://developer.apple.com/machine-learning/create-ml/</li>
+<li>CreateML: <a href="https://developer.apple.com/machine-learning/create-ml/" target="_blank" rel="noopener" title="">https://developer.apple.com/machine-learning/create-ml/</a></li>
 </ul><p>The post <a href="/380-2/">Integrating Machine Learning into iOS Apps: A starter roadmap</a> first appeared on <a href="/">Devashree Shukla</a>.</p>]]></content:encoded>
 					
 					<wfw:commentRss>/380-2/feed/</wfw:commentRss>
@@ -418,6 +423,11 @@ class ImageClassifier {
 		<dc:creator><![CDATA[devashreeks]]></dc:creator>
 		<pubDate>Thu, 21 Mar 2024 08:06:22 +0000</pubDate>
 				<category><![CDATA[Technical Writings]]></category>
+		<category><![CDATA[iOS playback]]></category>
+		<category><![CDATA[Media]]></category>
+		<category><![CDATA[Picture in picture]]></category>
+		<category><![CDATA[PIP]]></category>
+		<category><![CDATA[Swift]]></category>
 		<guid isPermaLink="false">/?p=310</guid>
 
 					<description><![CDATA[<p>Welcome to my in-depth guide on implementing the Picture-in-Picture (PiP) feature in iOS apps. PiP is a user-friendly functionality that allows video content to continue playing in a small, floating window while users navigate different apps or screens on their devices. This guide is designed for iOS developers looking to enrich their apps with PiP...</p>
@@ -621,6 +631,10 @@ class PiPDemoTests: XCTestCase {
 		<dc:creator><![CDATA[devashreeks]]></dc:creator>
 		<pubDate>Mon, 18 Mar 2024 12:44:58 +0000</pubDate>
 				<category><![CDATA[Technical Writings]]></category>
+		<category><![CDATA[Chatbot]]></category>
+		<category><![CDATA[ChatGPT]]></category>
+		<category><![CDATA[Prompt]]></category>
+		<category><![CDATA[Prompt engineering]]></category>
 		<guid isPermaLink="false">/?p=276</guid>
 
 					<description><![CDATA[<p>ChatGPT has revolutionized the way we interact with artificial intelligence, offering a vast landscape of possibilities from generating creative content to solving complex queries. However, the key to unlocking its full potential lies in the art of prompt engineering. By understanding and applying the six main components of ChatGPT prompts—Task, Context, Example, Persona, Format, and...</p>
@@ -763,6 +777,17 @@ class PiPDemoTests: XCTestCase {
 		<dc:creator><![CDATA[devashreeks]]></dc:creator>
 		<pubDate>Tue, 20 Dec 2022 16:56:00 +0000</pubDate>
 				<category><![CDATA[Technical Writings]]></category>
+		<category><![CDATA[App Architecture]]></category>
+		<category><![CDATA[Best practices]]></category>
+		<category><![CDATA[Code quality]]></category>
+		<category><![CDATA[Code structing]]></category>
+		<category><![CDATA[Comparing app architectures]]></category>
+		<category><![CDATA[MVC]]></category>
+		<category><![CDATA[MVP]]></category>
+		<category><![CDATA[MVVM]]></category>
+		<category><![CDATA[Scalability]]></category>
+		<category><![CDATA[Separation of concerns]]></category>
+		<category><![CDATA[Swift]]></category>
 		<guid isPermaLink="false">/?p=294</guid>
 
 					<description><![CDATA[<p>The architecture of a mobile application is akin to the blueprint of a building; it lays the foundational structure upon which everything else is built. For iOS applications, selecting the right architecture is crucial for scalability, maintainability, testability, and efficient performance. My this blog explores the predominant architectures that I learned and used in iOS...</p>

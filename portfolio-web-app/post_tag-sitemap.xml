@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on March 23, 2024 at 11:26 am by All in One SEO v4.5.8 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on March 23, 2024 at 12:13 pm by All in One SEO v4.5.8 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="/default-sitemap.xsl?sitemap=post_tag"?>
 <urlset
@@ -9,49 +9,187 @@
 >
 	<url>
 		<loc><![CDATA[/tag/generics/]]></loc>
-		<lastmod><![CDATA[2024-03-23T11:15:00+00:00]]></lastmod>
+		<lastmod><![CDATA[2024-03-23T12:13:20+00:00]]></lastmod>
 		<changefreq><![CDATA[monthly]]></changefreq>
 		<priority><![CDATA[0.3]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[/tag/variadic-parameters/]]></loc>
-		<lastmod><![CDATA[2024-03-23T11:15:00+00:00]]></lastmod>
+		<lastmod><![CDATA[2024-03-23T12:13:20+00:00]]></lastmod>
 		<changefreq><![CDATA[monthly]]></changefreq>
 		<priority><![CDATA[0.3]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[/tag/swift/]]></loc>
-		<lastmod><![CDATA[2024-03-23T11:15:00+00:00]]></lastmod>
+		<lastmod><![CDATA[2024-03-23T12:13:20+00:00]]></lastmod>
 		<changefreq><![CDATA[monthly]]></changefreq>
 		<priority><![CDATA[0.3]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[/tag/c/]]></loc>
-		<lastmod><![CDATA[2024-03-23T11:15:00+00:00]]></lastmod>
+		<lastmod><![CDATA[2024-03-23T12:13:20+00:00]]></lastmod>
 		<changefreq><![CDATA[monthly]]></changefreq>
 		<priority><![CDATA[0.3]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[/tag/parameter-packs/]]></loc>
-		<lastmod><![CDATA[2024-03-23T11:15:00+00:00]]></lastmod>
+		<lastmod><![CDATA[2024-03-23T12:13:20+00:00]]></lastmod>
 		<changefreq><![CDATA[monthly]]></changefreq>
 		<priority><![CDATA[0.3]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[/tag/code-flexibility/]]></loc>
-		<lastmod><![CDATA[2024-03-23T11:15:00+00:00]]></lastmod>
+		<lastmod><![CDATA[2024-03-23T12:13:20+00:00]]></lastmod>
 		<changefreq><![CDATA[monthly]]></changefreq>
 		<priority><![CDATA[0.3]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[/tag/code-quality/]]></loc>
-		<lastmod><![CDATA[2024-03-23T11:15:00+00:00]]></lastmod>
+		<lastmod><![CDATA[2024-03-23T12:13:20+00:00]]></lastmod>
 		<changefreq><![CDATA[monthly]]></changefreq>
 		<priority><![CDATA[0.3]]></priority>
 	</url>
 	<url>
 		<loc><![CDATA[/tag/code-enhancemnet/]]></loc>
-		<lastmod><![CDATA[2024-03-23T11:15:00+00:00]]></lastmod>
+		<lastmod><![CDATA[2024-03-23T12:13:20+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/coreml/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:48:45+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/machine-learning/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:48:45+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/createml/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:48:45+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/arkit/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:48:45+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/realitykit/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:48:45+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/image-detection/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:48:45+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/picture-in-picture/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:38:30+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/pip/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:38:30+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/ios-playback/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:38:30+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/media/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:38:30+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/prompt-engineering/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:39:51+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/chatgpt/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:39:51+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/prompt/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:39:51+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/chatbot/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:39:51+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/app-architecture/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:42:57+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/mvc/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:42:57+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/mvp/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:42:57+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/mvvm/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:42:57+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/code-structing/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:42:57+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/best-practices/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:42:57+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/comparing-app-architectures/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:42:57+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/scalability/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:42:57+00:00]]></lastmod>
+		<changefreq><![CDATA[monthly]]></changefreq>
+		<priority><![CDATA[0.3]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/tag/separation-of-concerns/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:42:57+00:00]]></lastmod>
 		<changefreq><![CDATA[monthly]]></changefreq>
 		<priority><![CDATA[0.3]]></priority>
 	</url>

@@ -12,7 +12,7 @@
 	<atom:link href="/tag/c/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>My professional portfolio</description>
-	<lastBuildDate>Sat, 23 Mar 2024 11:15:00 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 23 Mar 2024 12:13:20 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -74,17 +74,15 @@
 
 
 <pre>
-#include <iostream>
-
-template<typename... Args>
+template< typename... Args >
 void print(Args... args) {
     (std::cout << ... << args) << '\n';
 }
-
-int main() {
-    print(1, 2, 3, "four", 5.0);
-}
 </pre>
+
+
+
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained"><div class="wp-block-group__inner-container"></div></div>
 
 
 
