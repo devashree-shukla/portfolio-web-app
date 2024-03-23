@@ -12,7 +12,7 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>My professional portfolio</description>
-	<lastBuildDate>Fri, 22 Mar 2024 14:55:35 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 23 Mar 2024 11:17:05 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,397 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.4.3</generator>
 	<item>
+		<title>Emulating C++-like Parameter Packs in Swift</title>
+		<link>/emulating-c-parameter-packs-with-variadic-parameters-and-generics-in-swift/?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=emulating-c-parameter-packs-with-variadic-parameters-and-generics-in-swift</link>
+					<comments>/emulating-c-parameter-packs-with-variadic-parameters-and-generics-in-swift/#respond</comments>
+		
+		<dc:creator><![CDATA[devashreeks]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2024 10:36:52 +0000</pubDate>
+				<category><![CDATA[Technical Writings]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[Code enhancemnet]]></category>
+		<category><![CDATA[Code flexibility]]></category>
+		<category><![CDATA[Code quality]]></category>
+		<category><![CDATA[Generics]]></category>
+		<category><![CDATA[parameter packs]]></category>
+		<category><![CDATA[Swift]]></category>
+		<category><![CDATA[Variadic parameters]]></category>
+		<guid isPermaLink="false">/?p=390</guid>
+
+					<description><![CDATA[<p>Parameter packs are a feature of C++ that allows functions and templates to accept an arbitrary number of arguments of any type. This feature is primarily used in template metaprogramming and is a part of C++&#8217;s template system, which isn&#8217;t directly mirrored in Swift as Swift has a different type system and language features. Basics...</p>
+<p>The post <a href="/emulating-c-parameter-packs-with-variadic-parameters-and-generics-in-swift/">Emulating C++-like Parameter Packs in Swift</a> first appeared on <a href="/">Devashree Shukla</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>Parameter packs are a feature of C++ that allows functions and templates to accept an arbitrary number of arguments of any type. This feature is primarily used in template metaprogramming and is a part of C++&#8217;s template system, which isn&#8217;t directly mirrored in Swift as Swift has a different type system and language features.</p>
+
+
+
+<h2 class="wp-block-heading">Basics of Parameter Packs in C++</h2>
+
+
+
+<p>In C++, parameter packs are used with template programming to create functions, classes, and structs that can operate with any number of parameters of any types. There are two kinds of parameter packs:</p>
+
+
+
+<ol>
+<li><strong>Type parameter packs:</strong> Represents zero or more type parameters.</li>
+
+
+
+<li><strong>Non-type parameter packs:</strong> Represents zero or more non-type parameters.</li>
+</ol>
+
+
+
+<p>Parameter packs are used in conjunction with variadic templates, which can take an arbitrary number of template arguments.</p>
+
+
+
+<h3 class="wp-block-heading">Example:</h3>
+
+
+
+<p>Here&#8217;s a simple example of a variadic template function that uses parameter packs:</p>
+
+
+
+<pre>
+#include <iostream>
+
+template<typename... Args>
+void print(Args... args) {
+    (std::cout << ... << args) << '\n';
+}
+
+int main() {
+    print(1, 2, 3, "four", 5.0);
+}
+</pre>
+
+
+
+<p>In this example, <code>Args</code> is a type parameter pack and <code>args</code> is a function parameter pack. The function <code>print</code> can accept any number of arguments of any type. The print line uses a fold expression (introduced in C++17) to print all arguments.</p>
+
+
+
+<h2 class="wp-block-heading">Differences in Swift</h2>
+
+
+
+<p>Swift does not have a direct equivalent of C++'s parameter packs because it handles variadic parameters and generics differently. Swift's variadic parameters allow functions to accept zero or more values of a specified type, and its generics enable functions, methods, classes, enums, and structs to work with any type in a type-safe manner.</p>
+
+
+
+<p>While you can achieve functionality that resembles the use of parameter packs through the use of generics and variadic parameters in Swift, it's done differently and with different syntax and language features. Swift's approach is more constrained and type-safe, reflecting its overall design philosophy.</p>
+
+
+
+<p>Understanding parameter packs is important if you're working with C++ or dealing with interoperability between C++ and other languages. However, when working in Swift, you'll use variadic parameters and generics to achieve similar flexible and reusable code structures.</p>
+
+
+
+<h2 class="wp-block-heading">Enabling equivalent behavior in Swift</h2>
+
+
+
+<p>Swift, unlike some other languages like C++, does not have a feature directly called "parameter packs". However, Swift has variadic parameters and generics, which can sometimes serve similar purposes. Let's break down these concepts, giving you a solid understanding and some examples that might help in an interview setting.</p>
+
+
+
+<h3 class="wp-block-heading">Variadic Parameters</h3>
+
+
+
+<p>Variadic parameters allow you to accept zero or more values of a specified type. You can use a variadic parameter to specify that the parameter can be passed a varying number of input values when the function is called. In Swift, a variadic parameter is written by placing three-period characters (<code>...</code>) after the parameter's type name.</p>
+
+
+
+<h4 class="wp-block-heading">Example:</h4>
+
+
+
+<pre>
+func sumOfNumbers(_ numbers: Int...) -> Int {
+    return numbers.reduce(0, +)
+}
+
+print(sumOfNumbers(1, 2, 3, 4, 5)) // 15
+</pre>
+
+
+
+<p>In this example, <code>numbers</code> is a variadic parameter that can accept any number of <code>Int</code> values. The function calculates the sum of all numbers provided.</p>
+
+
+
+<h3 class="wp-block-heading">Generics</h3>
+
+
+
+<p>Generics enable you to write flexible, reusable functions and types that can work with any type, subject to the requirements that you define. They are especially useful when you want to perform the same operation on different types.</p>
+
+
+
+<h4 class="wp-block-heading">Example:</h4>
+
+
+
+<pre>
+func printItems<T>(_ items: [T]) {
+    for item in items {
+        print(item)
+    }
+}
+
+printItems([1, 2, 3])
+printItems(["apple", "banana", "cherry"])
+</pre>
+
+
+
+<p>In this example, <code>printItems</code> can accept an array of any type thanks to generics, and then iterates over the items in the array to print them. This isn't a true parameter pack in the sense of languages like C++, but it demonstrates how you can achieve similar functionality in Swift.</p>
+
+
+
+<p>When preparing for interviews, understanding how to leverage Swift's language features like variadic parameters and generics can demonstrate your ability to think about problems flexibly and use the language effectively. Practice incorporating these concepts into your code to solve a variety of problems, as this will likely improve your code base or impress your interviewers as well.</p><p>The post <a href="/emulating-c-parameter-packs-with-variadic-parameters-and-generics-in-swift/">Emulating C++-like Parameter Packs in Swift</a> first appeared on <a href="/">Devashree Shukla</a>.</p>]]></content:encoded>
+					
+					<wfw:commentRss>/emulating-c-parameter-packs-with-variadic-parameters-and-generics-in-swift/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Integrating Machine Learning into iOS Apps: A starter roadmap</title>
+		<link>/380-2/?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=380-2</link>
+					<comments>/380-2/#respond</comments>
+		
+		<dc:creator><![CDATA[devashreeks]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2024 06:45:34 +0000</pubDate>
+				<category><![CDATA[Technical Writings]]></category>
+		<guid isPermaLink="false">/?p=380</guid>
+
+					<description><![CDATA[<p>Core ML ARKit RealityKit Vision Framework Important Core ML APIs and Concepts Project Idea: Image Classifier App A simple yet intriguing project could be an Image Classifier iOS app. This app would use the camera to capture images in real time and classify them using a pre-trained Core ML model. For demonstration purposes, let&#8217;s use...</p>
+<p>The post <a href="/380-2/">Integrating Machine Learning into iOS Apps: A starter roadmap</a> first appeared on <a href="/">Devashree Shukla</a>.</p>]]></description>
+										<content:encoded><![CDATA[<h4 class="wp-block-heading">Core ML</h4>
+
+
+
+<ul>
+<li><strong>Overview</strong>: Core ML is Apple&#8217;s framework for integrating machine learning models into apps. It&#8217;s optimized for on-device performance, which minimizes memory footprint and power consumption.</li>
+
+
+
+<li><strong>Key Concepts</strong>: Model integration, Prediction, Real-time processing, Model conversion (using Core ML Tools).</li>
+
+
+
+<li><strong>Use Cases</strong>: Image classification, Sentiment analysis, Text prediction, Speech recognition.</li>
+
+
+
+<li>For further reading: <a href="https://developer.apple.com/documentation/coreml">https://developer.apple.com/documentation/coreml</a></li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">ARKit</h4>
+
+
+
+<ul>
+<li><strong>Overview</strong>: ARKit is Apple&#8217;s framework for developing augmented reality experiences. It combines device motion tracking, camera scene capture, advanced scene processing, and display conveniences to simplify the task of building an AR experience.</li>
+
+
+
+<li><strong>Key Concepts</strong>: World Tracking, Face Tracking, Image &amp; Object Detection, Environmental understanding, Human occlusion.</li>
+
+
+
+<li><strong>Use Cases</strong>: Virtual object placement, Interactive gaming, Retail and design, and Educational tools.</li>
+
+
+
+<li>For further reading: <a href="https://developer.apple.com/documentation/arkit">https://developer.apple.com/documentation/arkit</a></li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">RealityKit</h4>
+
+
+
+<ul>
+<li><strong>Overview</strong>: RealityKit is a new framework by Apple designed to work with ARKit. It focuses on rendering realistic 3D and AR content with photorealistic rendering, animation, physics, and spatial audio.</li>
+
+
+
+<li><strong>Key Concepts</strong>: Anchoring system, Entity-component system, Ray-casting, Collaborative sessions.</li>
+
+
+
+<li><strong>Use Cases</strong>: Complex AR applications, Realistic simulations, Collaborative AR experiences.</li>
+
+
+
+<li>For further reading: <a href="https://developer.apple.com/documentation/RealityKit">https://developer.apple.com/documentation/RealityKit</a></li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">Vision Framework</h4>
+
+
+
+<ul>
+<li><strong>Overview</strong>: The Vision Framework uses computer vision to perform face tracking, face detection, landmarks detection, text detection, and barcode recognition.</li>
+
+
+
+<li><strong>Key Concepts</strong>: Image analysis, Object tracking, Text recognition, Barcode detection.</li>
+
+
+
+<li><strong>Use Cases</strong>: Photo tagging, Interactive text features, Retail apps, Security applications.</li>
+
+
+
+<li>For further reading: <a href="https://developer.apple.com/documentation/vision">https://developer.apple.com/documentation/vision</a></li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Important Core ML APIs and Concepts</h3>
+
+
+
+<ul>
+<li><strong>MLModel</strong>: The core class that represents a machine learning model in Core ML. You load a model into your app by referencing its generated class, which conforms to the <code>MLModel</code> protocol.</li>
+
+
+
+<li><strong>MLModelProvider</strong>: A protocol that defines methods for loading and updating models dynamically, useful for apps that need to update their models without being recompiled.</li>
+
+
+
+<li><strong>MLFeatureValue</strong>: Represents the data input and output of a model. Core ML supports several data types, including numbers, strings, images (as <code>CVPixelBuffer</code>), multiarrays, dictionaries, and sequences.</li>
+
+
+
+<li><strong>MLDictionaryFeatureProvider</strong>: A convenient way to provide input to a model using a dictionary where keys are the input feature names of the model.</li>
+
+
+
+<li><strong>MLPredictionOptions</strong>: Options to configure model predictions, such as specifying the preferred Metal device for running the model.</li>
+
+
+
+<li><strong>Vision Framework Integration</strong>: For tasks that involve image processing before feeding into a Core ML model, the Vision framework can be used to prepare images. This is often necessary for tasks like object detection, image classification, and more.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Project Idea: Image Classifier App</h3>
+
+
+
+<p>A simple yet intriguing project could be an Image Classifier iOS app. This app would use the camera to capture images in real time and classify them using a pre-trained Core ML model. For demonstration purposes, let&#8217;s use MobileNet, a lightweight model suitable for mobile applications, to classify objects into predefined categories.</p>
+
+
+
+<h4 class="wp-block-heading">Step 1: Add MobileNet to Your Project</h4>
+
+
+
+<p>First, you need to add a Core ML model to your project. You can download the MobileNet model from Apple&#8217;s Core ML models page or use any other model that suits your interest.</p>
+
+
+
+<h4 class="wp-block-heading">Step 2: Core ML Model Integration</h4>
+
+
+
+<p>Once the model is added to your project, Xcode automatically generates a class for the model. You can then use this class to make predictions.</p>
+
+
+
+<p>Organize your code into folders like <code>Models</code>, <code>ViewControllers</code>, <code>Views</code>, and <code>Helpers</code> for better readability.</p>
+
+
+
+<p></p>
+
+
+
+<pre>
+import UIKit
+import Vision
+import CoreML
+
+class ImageClassifier {
+    private var model: VNCoreMLModel?
+    
+    init() {
+        do {
+            let configuration = MLModelConfiguration()
+            model = try VNCoreMLModel(for: MobileNet(configuration: configuration).model)
+        } catch {
+            print("Error setting up Core ML model: \(error)")
+        }
+    }
+    
+    func classify(image: UIImage, completion: @escaping (String) -> Void) {
+        guard let model = model, let ciImage = CIImage(image: image) else {
+            completion("Model or image not available")
+            return
+        }
+        
+        let request = VNCoreMLRequest(model: model) { request, error in
+            guard let results = request.results as? [VNClassificationObservation],
+                  let topResult = results.first else {
+                completion("Failed to classify image.")
+                return
+            }
+            
+            completion("Classification: \(topResult.identifier), Confidence: \(topResult.confidence)")
+        }
+        
+        let handler = VNImageRequestHandler(ciImage: ciImage)
+        do {
+            try handler.perform([request])
+        } catch {
+            print("Failed to perform classification.\n\(error.localizedDescription)")
+        }
+    }
+}
+</pre>
+
+
+
+<h3 class="wp-block-heading">References </h3>
+
+
+
+<ul>
+<li>CoreML models: https://developer.apple.com/machine-learning/models/#image</li>
+
+
+
+<li>CoreML models: https://github.com/likedan/Awesome-CoreML-Models</li>
+
+
+
+<li>Demo: https://github.com/tucan9389/awesome-ml-demos-with-ios</li>
+
+
+
+<li>CreateML: https://developer.apple.com/machine-learning/create-ml/</li>
+</ul><p>The post <a href="/380-2/">Integrating Machine Learning into iOS Apps: A starter roadmap</a> first appeared on <a href="/">Devashree Shukla</a>.</p>]]></content:encoded>
+					
+					<wfw:commentRss>/380-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Implementing Picture-in-Picture (PiP) in iOS Apps: A Comprehensive Guide</title>
 		<link>/implementing-picture-in-picture-pip-in-ios-apps-a-comprehensive-guide/?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=implementing-picture-in-picture-pip-in-ios-apps-a-comprehensive-guide</link>
 					<comments>/implementing-picture-in-picture-pip-in-ios-apps-a-comprehensive-guide/#respond</comments>
@@ -1234,103 +1625,6 @@ class PiPDemoTests: XCTestCase {
 <cite>My second poem for assigned vacation project when I was in 9th standard school vacation.</cite></blockquote><p>The post <a href="/%e0%aa%ae%e0%aa%a8-%e0%aa%a5%e0%aa%af%e0%ab%81%e0%aa%82/">મન થયું : Nature from Ninth – Grade lover</a> first appeared on <a href="/">Devashree Shukla</a>.</p>]]></content:encoded>
 					
 					<wfw:commentRss>/%e0%aa%ae%e0%aa%a8-%e0%aa%a5%e0%aa%af%e0%ab%81%e0%aa%82/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>મારી દુનિયા</title>
-		<link>/%e0%aa%ae%e0%aa%be%e0%aa%b0%e0%ab%80-%e0%aa%a6%e0%ab%81%e0%aa%a8%e0%aa%bf%e0%aa%af%e0%aa%be/?utm_source=rss#038;utm_medium=rss&#038;utm_campaign=%25e0%25aa%25ae%25e0%25aa%25be%25e0%25aa%25b0%25e0%25ab%2580-%25e0%25aa%25a6%25e0%25ab%2581%25e0%25aa%25a8%25e0%25aa%25bf%25e0%25aa%25af%25e0%25aa%25be</link>
-					<comments>/%e0%aa%ae%e0%aa%be%e0%aa%b0%e0%ab%80-%e0%aa%a6%e0%ab%81%e0%aa%a8%e0%aa%bf%e0%aa%af%e0%aa%be/#respond</comments>
-		
-		<dc:creator><![CDATA[devashreeks]]></dc:creator>
-		<pubDate>Mon, 06 Mar 2006 13:04:00 +0000</pubDate>
-				<category><![CDATA[Creative Writings]]></category>
-		<guid isPermaLink="false">/?p=130</guid>
-
-					<description><![CDATA[<p>સપને સપને મળતા, ઈમાનભરા અવસર પગલે પગલે મળતા, નવનીત અવસર હતા એ અવસર કઠિન. તેથી ભુલાઈ ગયા હાસ્ય રુદન અંતરના, ભુલાઈ ગયા નબળાઈ ને ખોટ અંતરના, બદલાઈ ગઈ દુનિયા અંતરની ને, ચાલી ગઈ અંતરની નવી દુનિયા મા. મન ના એક જ ટકોરે, નીકળી પડી મુકામ તરફ જીવન ના ને, પહોચી ઊંચા અનંત બ્રહ્માંડના મધ્યમા,&#160; પામી...</p>
-<p>The post <a href="/%e0%aa%ae%e0%aa%be%e0%aa%b0%e0%ab%80-%e0%aa%a6%e0%ab%81%e0%aa%a8%e0%aa%bf%e0%aa%af%e0%aa%be/">મારી દુનિયા</a> first appeared on <a href="/">Devashree Shukla</a>.</p>]]></description>
-										<content:encoded><![CDATA[<blockquote class="wp-block-quote has-medium-font-size">
-<p class="has-medium-font-size">સપને સપને મળતા, ઈમાનભરા અવસર</p>
-
-
-
-<p class="has-medium-font-size">પગલે પગલે મળતા, નવનીત અવસર</p>
-
-
-
-<p class="has-medium-font-size">હતા એ અવસર કઠિન.</p>
-
-
-
-<p class="has-medium-font-size"></p>
-
-
-
-<p class="has-medium-font-size">તેથી ભુલાઈ ગયા હાસ્ય રુદન અંતરના,</p>
-
-
-
-<p class="has-medium-font-size">ભુલાઈ ગયા નબળાઈ ને ખોટ અંતરના,</p>
-
-
-
-<p class="has-medium-font-size">બદલાઈ ગઈ દુનિયા અંતરની ને,</p>
-
-
-
-<p class="has-medium-font-size">ચાલી ગઈ અંતરની નવી દુનિયા મા.</p>
-
-
-
-<p class="has-medium-font-size"></p>
-
-
-
-<p class="has-medium-font-size">મન ના એક જ ટકોરે,</p>
-
-
-
-<p class="has-medium-font-size">નીકળી પડી મુકામ તરફ જીવન ના ને,</p>
-
-
-
-<p class="has-medium-font-size">પહોચી ઊંચા અનંત બ્રહ્માંડના મધ્યમા,&nbsp;</p>
-
-
-
-<p class="has-medium-font-size">પામી સુખ અંતરના,</p>
-
-
-
-<p class="has-medium-font-size">બની ગઈ હું પરિપૂર્ણ અંતર થી જગતમા,&nbsp;</p>
-
-
-
-<p class="has-medium-font-size">ને બની દોલત વિશ્વ અવકાશ વિજ્ઞાન ની</p>
-
-
-
-<p class="has-medium-font-size"></p>
-
-
-
-<p class="has-medium-font-size">બસ આ જ સપનું</p>
-
-
-
-<p class="has-medium-font-size">આ જ અવસર અને</p>
-
-
-
-<p class="has-medium-font-size">આ જ મારી દુનિયા</p>
-
-
-
-<p></p>
-<cite>My very first poem for assigned vacation project when I was in 9th standard school vacation. Inspired from my dream to fly in space &amp; Kalpana Chawla &amp; Sunita William’s tragic demise in world, which killed the dream but alive in my this writing.</cite></blockquote><p>The post <a href="/%e0%aa%ae%e0%aa%be%e0%aa%b0%e0%ab%80-%e0%aa%a6%e0%ab%81%e0%aa%a8%e0%aa%bf%e0%aa%af%e0%aa%be/">મારી દુનિયા</a> first appeared on <a href="/">Devashree Shukla</a>.</p>]]></content:encoded>
-					
-					<wfw:commentRss>/%e0%aa%ae%e0%aa%be%e0%aa%b0%e0%ab%80-%e0%aa%a6%e0%ab%81%e0%aa%a8%e0%aa%bf%e0%aa%af%e0%aa%be/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

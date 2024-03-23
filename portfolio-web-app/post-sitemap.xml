@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on March 22, 2024 at 4:47 pm by All in One SEO v4.5.8 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on March 23, 2024 at 11:17 am by All in One SEO v4.5.8 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="/default-sitemap.xsl?sitemap=post"?>
 <urlset
@@ -12,6 +12,21 @@
 		<lastmod><![CDATA[2017-06-15T10:29:33+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/380-2/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:17:05+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+	</url>
+	<url>
+		<loc><![CDATA[/emulating-c-parameter-packs-with-variadic-parameters-and-generics-in-swift/]]></loc>
+		<lastmod><![CDATA[2024-03-23T11:15:00+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2024/03/resized_blog_feature_image.png]]></image:loc>
+		</image:image>
 	</url>
 	<url>
 		<loc><![CDATA[/implementing-picture-in-picture-pip-in-ios-apps-a-comprehensive-guide/]]></loc>
